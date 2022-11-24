@@ -18,7 +18,8 @@ class ese01Dialog(aw.Dialog):
         if not kwargs.has_key('title') and len(args) < 3:
             kwargs['title'] = 'titolo finestra'
         aw.Dialog.__init__(self, *args, **kwargs)
-        self.AddSizedPanel(ese01Panel(self, -1))    
+        self.AddSizedPanel(ese01Panel(self, -1))  
+        #self.CenterOnScreen()  
     
     
 class ese01Panel(aw.Panel):
